@@ -1,0 +1,101 @@
+/*
+Visual Frameworks 1207
+Full Sail University
+Mobile Development
+Professor: Chad Gibson
+PlayIGL Team Management App
+Project 2
+Jonathan Caraveo 
+*/
+
+body{
+	background-color:#1b1b1b;
+	font-family: 'Homenaje', sans-serif;
+	color: white;
+	padding: 2%;}
+
+div.logoContainer{
+	margin: 5px auto 0 auto;
+	border: 2px solid #666;
+	padding 1px 1px 1px 1px;}
+
+h1{
+	color:orange;
+	text-align:center;}
+	
+h2{
+	color: #e3e3e3;
+	text-align:center;}
+
+h3{
+	color:orange;
+	text-align:center;}
+	
+a {
+	margin: 10px;
+	color: #88c5f5;} 
+    
+a:hover {
+	color: #FF00FF;} 
+	
+a:active {
+	color: #ffffff;}
+
+p{
+	font-family:"Times New Roman";
+	font-size:20px;}
+
+#logo, .logo, #icon, .icon {
+	margin: 10px auto 5px auto;
+    width: 262px;
+}
+    
+
+
+ul.additem {
+	line-spacing: 20px;
+	list-style: none;}
+
+ul.additem li {
+	padding-right: .2em;
+	line-spacing: 10px;
+	margin: 10px;
+	font-size: 20px;
+	letter-spacing:2px}
+
+#errors {
+	color: red;}
+	
+input.search {
+	margin: 10px 5px 10px 5px;
+	display: inline;
+	width: 75%;
+}
+
+
+#categories {
+	width: 100%;
+
+}
+	
+#categories li a {
+	text-decoration: none;
+	height: 28px;
+	color: white;
+	font-size: 20px;
+}
+	
+#categories li a:link, #categories li a:visited {
+	color: #777;
+	display: block;
+	background-color: orange;
+	padding: 12px 0 0 20px;
+	color: black;
+}
+
+
+#categories ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
