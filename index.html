@@ -33,7 +33,7 @@ Jonathan Caraveo
 		</div>
 		<img  class="logo" src="images/logo.png" />
 		<p>
-		<a href="additem.html" data-role="button" data-theme="e" data-ajax="false" data-icon="plus" data-iconpos="right">Add Member</a>
+		<a href="#addItem" data-role="button" data-theme="e" data-ajax="false" data-icon="plus" data-iconpos="right">Add Member</a>
 		</p>
 		<div data-role="content">
 			<ul data-role="listview" data-filter="true" data-theme="a" data-inset="true">
@@ -403,7 +403,7 @@ Jonathan Caraveo
 
 
 
-	<div data-role="page" id="about">
+	<div data-role="page" id="about" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed">
 	 		<h1>About Page</h1>
 		</div>
@@ -430,44 +430,92 @@ Jonathan Caraveo
 	
 	
 	
-	<div data-role="page" id="addItem">
+	<div data-role="page" id="addItem" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed">
 	 		<h1>Add Member</h1>
 		</div>
 
 		<div data-role="content">
 		
-		<form name="addTeamMember" id="addTeamMember" action="#" method="post">
+		<form id="formAddMember" action="" method="post">
 			<fieldset>
 				<span>* Fields are Required.</span>
-				<ul id="errors"></ul>
-				
-					<label for="alias">Gamer Alias: </label><input type="text" id="alias" />
-					<label for="fName">First Name: </label><input type="text" id="fName" />
-					<label for="lName">Last Name: </label><input type="text" id="lName" />
-					<label for="eMail">eMail: </label><input type="email" id="eMail" placeholder="you@PlayIGL.com" />
-					<label for="bDay">Birthday: </label><input type="date" name="bDay" id="bDay" />
-					<input type="radio" name="sex" value="Male" id="male" /><label for="male"> Male</label>
-					<input type="radio" name="sex" value="Female" id="female" /><label for="female"> Female</label>
-					<label for="alias">Language: </label><input type="hidden" name="Language" value="English" id="language" /> English	
-				<legend>Gaming Information</legend>
-					<label for="skill">Skill Level: </label><input type="range" name="skill" min="1" max="10" id="skill"/>
-					Are you a Professional Gamer?
-					<input type="checkbox" name="pro" value="Yes" id="pro" /><label for="pro">Yes</label></li>
-					<label for="division">Gaming Division:</label>
-						<select name="division" id="division">
-							<option value="west">West</option>
-				 			<option value="central">Central</option>
-							<option value="east">East</option>
-							<option value="int">International</option>
-						</select>
-					<label for="league">League:</label>
+					
+					<div data-role="fieldcontain">
+						<ul id="errors"></ul>	
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="alias">Gamer Alias: </label>
+						<input type="text" id="alias" placeholder="What is your Gamer Name?" />
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="fName">First Name: </label>
+						<input type="text" id="fName" placeholder="What is your First Name?" />
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="lName">Last Name: </label>
+						<input type="text" id="lName" placeholder="What is your Last Name?" />
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="eMail">eMail: </label>
+						<input type="email" id="eMail" placeholder="you@PlayIGL.com" />
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="bDay">Birthday: </label>
+						<input type="date" name="bDay" id="bDay" placeholder="87-02-14" />
+					</div>
+					
+					<div data-role="fieldcontain">
+						Gender:
+						<input type="radio" name="sex" value="Male" id="male" checked="true"/><label for="male"> Male</label>
+						<input type="radio" name="sex" value="Female" id="female" /><label for="female"> Female</label>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="language">Language: English</label>
+						<input type="hidden" name="Language" value="English" id="language" />
+					</div>
+					
+					<div data-role="fieldcontain">	
+						<label for="skill">Skill Level:</label>
+						<input type="range" name="skill" placeholder="50" min="1" max="100" id="skill"/>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="pro">Are you a Professional Gamer?</label>
+							<select name="pro" id="pro" data-role="slider" >
+								<option value="west">Yes</option>
+				 				<option value="central">No</option>
+							</select>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="division">Gaming Division:</label>
+							<select name="division" id="division">
+								<option value="west">West</option>
+				 				<option value="central">Central</option>
+								<option value="east">East</option>
+								<option value="int">International</option>
+							</select>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="league">League:</label>
 						<select name="league" id="league">
 							<option value="west">Major</option>
-				 			<option value="central">National</option>
+					 		<option value="central">National</option>
 							<option value="international">International</option>
 						</select>
-					<label for="notes">Notes:</label><br /><textarea rows="4" cols="32" name="notes" id="notes"></textarea>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="notes">Notes:</label>
+						<textarea rows="4" cols="32" name="notes" id="notes" placeholder="Notes about the player here."></textarea>
 			</fieldset>
 			<input type="button" value="Submit!" id="submit" />	
 		</form>
