@@ -31,6 +31,7 @@ Jonathan Caraveo
 		<div data-role="header" data-position="fixed">
 	 		<h1>Gold</h1>
 		</div>
+		<img  class="logo" src="images/logo.png" />
 		<p>
 		<a href="additem.html" data-role="button" data-theme="e" data-ajax="false" data-icon="plus" data-iconpos="right">Add Member</a>
 		</p>
@@ -426,6 +427,64 @@ Jonathan Caraveo
 			</div>
 		</div>
 	</div>
+	
+	
+	
+	<div data-role="page" id="addItem">
+		<div data-role="header" data-position="fixed">
+	 		<h1>Add Member</h1>
+		</div>
+
+		<div data-role="content">
+		
+		<form name="addTeamMember" id="addTeamMember" action="#" method="post">
+			<fieldset>
+				<span>* Fields are Required.</span>
+				<ul id="errors"></ul>
+				
+					<label for="alias">Gamer Alias: </label><input type="text" id="alias" />
+					<label for="fName">First Name: </label><input type="text" id="fName" />
+					<label for="lName">Last Name: </label><input type="text" id="lName" />
+					<label for="eMail">eMail: </label><input type="email" id="eMail" placeholder="you@PlayIGL.com" />
+					<label for="bDay">Birthday: </label><input type="date" name="bDay" id="bDay" />
+					<input type="radio" name="sex" value="Male" id="male" /><label for="male"> Male</label>
+					<input type="radio" name="sex" value="Female" id="female" /><label for="female"> Female</label>
+					<label for="alias">Language: </label><input type="hidden" name="Language" value="English" id="language" /> English	
+				<legend>Gaming Information</legend>
+					<label for="skill">Skill Level: </label><input type="range" name="skill" min="1" max="10" id="skill"/>
+					Are you a Professional Gamer?
+					<input type="checkbox" name="pro" value="Yes" id="pro" /><label for="pro">Yes</label></li>
+					<label for="division">Gaming Division:</label>
+						<select name="division" id="division">
+							<option value="west">West</option>
+				 			<option value="central">Central</option>
+							<option value="east">East</option>
+							<option value="int">International</option>
+						</select>
+					<label for="league">League:</label>
+						<select name="league" id="league">
+							<option value="west">Major</option>
+				 			<option value="central">National</option>
+							<option value="international">International</option>
+						</select>
+					<label for="notes">Notes:</label><br /><textarea rows="4" cols="32" name="notes" id="notes"></textarea>
+			</fieldset>
+			<input type="button" value="Submit!" id="submit" />	
+		</form>
+
+		</div>
+		<div data-role="footer" data-position="fixed"  data-id="nav">
+			<div data-role="navbar">
+				<ul> 
+					<li>
+						<a href="#about" data-icon="gear">About</a>
+					</li>
+				</ul>
+			
+			</div>
+		</div>
+	</div>
+
 
 
 	</body>
