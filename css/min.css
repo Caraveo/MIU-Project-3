@@ -4,3 +4,17 @@ img.logo{
 	margin-right: auto;
 	margin-top: 20px;
 }
+
+label.error{
+	display: block;
+	margin: 10px 0;
+	color: red;
+}
+
+span.red{
+	color: red;
+}
+
+#errorsXXX{
+	display: none;
+}
