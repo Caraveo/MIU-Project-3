@@ -27,60 +27,43 @@ Jonathan Caraveo
 	</head>
 	<body>
 	
+	
 	<div data-role="page" id="home">
 		<div data-role="header" data-position="fixed">
-	 		<h1>Gold</h1>
+	 		<h1>Bronze</h1>
 		</div>
-		<img  class="logo" src="images/logo.png" />
-		<p>
-		<a href="#addItem" data-role="button" data-theme="e" data-ajax="false" data-icon="plus" data-iconpos="right">Add Member</a>
-		</p>
+		<a href="additem.html" data-role="button" data-theme="b" data-ajax="false" data-icon="plus" data-iconpos="right">Add Member</a>
 		<div data-role="content">
-			<ul data-role="listview" data-filter="true" data-theme="a" data-inset="true">
-				<li data-role="list-divider">Leagues</li>
-				<li>
-					
-					<a href="#members"  id="major" data-ajax="false" data-theme="a" />
-						<img src="images/thumbs/MLG.png" />
+		
+					<h3>Leagues</h3>
+					<div data-role="collapsible" data-theme="c" data-content-theme="c">
 						<h3>Major</h3>
 						<p>Major Gaming League</p>
-					</a>
-				</li>
-				<li>
-					<a href="#members" id="international" data-ajax="false" data-theme="a" />
-						<img src="images/thumbs/IGL.png" />
+					</div>
+					<div data-role="collapsible" data-theme="c" data-content-theme="c">
 						<h3>International</h3>
 						<p>International Gaming League</p>
-					</a>
-				</li>
-				<li>
-					<a href="#members" id="national" data-ajax="false" data-theme="a" />
-						<img src="images/thumbs/NGL.png" />
+					</div>
+					<div data-role="collapsible" data-theme="c" data-content-theme="c">
 						<h3>National</h3>
 						<p>National Gaming League</p>
-					</a>
-				</li>
-				<li data-role="list-divider">Divisions</li>
-				<li>
-					<a href="#members" id="west" data-ajax="false" data-theme="a" />
+					</div>
+			
+					<h3>Divisions</h3>
+					<div data-role="collapsible" data-theme="c" data-content-theme="c">
 						<h3>West</h3>
 						<p>West Coast Gamers</p>
-					</a>
-				</li>
-				<li>
-					<a href="#members" id="central" data-ajax="false" data-theme="a" />
+					</div>
+					<div data-role="collapsible" data-theme="c" data-content-theme="c">
 						<h3>Central</h3>
 						<p>Central Gamers</p>
-					</a>
-				</li>
-				<li>
-					<a href="#members" id="east" data-ajax="false" data-theme="a" />
+					</div>
+					<div data-role="collapsible" data-theme="c" data-content-theme="c">
 						<h3>East</h3>
 						<p>East Coast Gamers</p>
-					</a>
-				</li>
+					</div>
 
-			</ul>
+
 		</div>
 		<div data-role="footer" data-position="fixed"  data-id="nav">
 			<div data-role="navbar">
@@ -89,204 +72,11 @@ Jonathan Caraveo
 						<a href="#about" data-icon="gear">About</a>
 					</li>
 				</ul>
+			
 			</div>
 		</div>
 	</div>
 	
-	
-<div data-role="page" id="members" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed">
-	 		<h1>Members List</h1>
-		</div>
-
-		<div data-role="content">
-			<ul data-role="listview" data-filter="true" data-theme="c">
-
-				<li>
-					<a href="#members" data-ajax="false" data-theme="c" />
-						
-						<ul>
-						<li><h3>Demlok</h3></li>
-						<li>First Name: Johnny</li>
-						<li>Last Name: Caraveo</li>
-						<li>Email: Caraveo@me.com</li>
-						<li>Birth Day: 02-14-1987</li>
-						<li>Language: English</li>
-						<li>Skill: 150</li>
-						<li>Sex: Male</li>
-						<li>Professional: Yes</li>
-						<li>Division: International</li>
-						<li>LeagueL Major</li>
-						<li>Notes: This is not a test.</li>
-						</ul>
-					</a>
-				</li>
-				
-				<li>
-					<a href="#members" data-ajax="false" data-theme="c" />
-						
-						<ul>
-						<li><h3>Ender</h3></li>
-						<li>First Name: David</li>
-						<li>Last Name: Bar</li>
-						<li>Email: DavidBar@me.com</li>
-						<li>Birth Day: 02-14-1984</li>
-						<li>Language: English</li>
-						<li>Skill: 250</li>
-						<li>Sex: Male</li>
-						<li>Professional: Yes</li>
-						<li>Division: International</li>
-						<li>LeagueL Major</li>
-						<li>Notes: The enemies' gate is down.</li>
-						</ul>
-					</a>
-				</li>
-				<li>
-					<a href="#members" data-ajax="false" data-theme="c" />
-						
-						<ul>
-						<li><h3>Bean</h3></li>
-						<li>First Name: Matty</li>
-						<li>Last Name: Bar</li>
-						<li>Email: MadyB@yahoo.com</li>
-						<li>Birth Day: 02-14-1995</li>
-						<li>Language: English</li>
-						<li>Skill: 300</li>
-						<li>Sex: Male</li>
-						<li>Professional: Yes</li>
-						<li>Division: International</li>
-						<li>LeagueL Major</li>
-						<li>Notes: Welcome to the Majors'.</li>
-						</ul>
-					</a>
-				</li>
-				<li>
-					<a href="#members" data-ajax="false" data-theme="c" />
-						
-						<ul>
-						<li><h3>Manny</h3></li>
-						<li>First Name: Manual</li>
-						<li>Last Name: Fresh</li>
-						<li>Email: Manny@yahoo.com</li>
-						<li>Birth Day: 03-21-1990</li>
-						<li>Language: English</li>
-						<li>Skill: 200</li>
-						<li>Sex: Male</li>
-						<li>Professional: Yes</li>
-						<li>Division: West</li>
-						<li>LeagueL Major</li>
-						<li>Notes: West Coast!.</li>
-						</ul>
-					</a>
-				</li>
-				<li>
-					<a href="#members" data-ajax="false" data-theme="c" />
-						
-						<ul>
-						<li><h3>mFresh</h3></li>
-						<li>First Name: Manual</li>
-						<li>Last Name: Fresh</li>
-						<li>Email: mFresh@me.com</li>
-						<li>Birth Day: 03-12-1980</li>
-						<li>Language: English</li>
-						<li>Skill: 350</li>
-						<li>Sex: Male</li>
-						<li>Professional: Yes</li>
-						<li>Division: Central</li>
-						<li>League: National</li>
-						<li>Notes: USA!</li>
-						</ul>
-					</a>
-				</li>
-				<li>
-					<a href="#members" data-ajax="false" data-theme="c" />
-						
-						<ul>
-						<li><h3>Xander</h3></li>
-						<li>First Name: Jane</li>
-						<li>Last Name: Doe</li>
-						<li>Email: JaneDoe@me.com</li>
-						<li>Birth Day: 02-14-1995</li>
-						<li>Language: English</li>
-						<li>Skill: 100</li>
-						<li>Sex: Femail</li>
-						<li>Professional: No</li>
-						<li>Division: Central</li>
-						<li>LeagueL Major</li>
-						<li>Notes: GamerGirl</li>
-						</ul>
-					</a>
-				</li>
-				<li>
-					<a href="#members" data-ajax="false" data-theme="c" />
-						
-						<ul>
-						<li><h3>Demetry</h3></li>
-						<li>First Name: Joe</li>
-						<li>Last Name: Smo</li>
-						<li>Email: Smo@me.com</li>
-						<li>Birth Day: 01-14-1980</li>
-						<li>Language: English</li>
-						<li>Skill: 200</li>
-						<li>Sex: Male</li>
-						<li>Professional: Yes</li>
-						<li>Division: West</li>
-						<li>LeagueL International</li>
-						<li>Notes: This is a note..</li>
-						</ul>
-					</a>
-				</li>
-				<li>
-					<a href="#members" data-ajax="false" data-theme="c" />
-						
-						<ul>
-						<li><h3>Locke</h3></li>
-						<li>First Name: Ryan</li>
-						<li>Last Name: Picaso</li>
-						<li>Email: Picaso@apple.com</li>
-						<li>Birth Day: 01-13-1990</li>
-						<li>Language: English</li>
-						<li>Skill: 100</li>
-						<li>Sex: Male</li>
-						<li>Professional: No</li>
-						<li>Division: International</li>
-						<li>LeagueL National</li>
-						<li>Notes: I play National.</li>
-						</ul>
-					</a>
-				</li>
-				<li>
-					<a href="#members" data-ajax="false" data-theme="c" />
-						<ul>
-						<li><h3>aceGamer</h3></li>
-						<li>First Name: Ariel</li>
-						<li>Last Name: Caraveo</li>
-						<li>Email: aCaraveo@me.com</li>
-						<li>Birth Day: 02-23-1979</li>
-						<li>Language: English</li>
-						<li>Skill: 300</li>
-						<li>Sex: Female</li>
-						<li>Professional: No</li>
-						<li>Division: International</li>
-						<li>LeagueL National</li>
-						<li>Notes: Perfect Ace.</li>
-						</ul>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div data-role="footer" data-position="fixed"  data-id="nav">
-			<div data-role="navbar">
-				<ul> 
-					<li>
-						<a href="#about" data-icon="gear">About</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-</div>
-
-
 
 
 
@@ -307,7 +97,7 @@ Jonathan Caraveo
 			<div data-role="navbar">
 				<ul> 
 					<li>
-						<a href="index.html#about" data-icon="gear" data-ajax="false">About</a>
+						<a href="index.html#about" data-ajax="false" data-icon="gear">About</a>
 					</li>
 				</ul>
 			
